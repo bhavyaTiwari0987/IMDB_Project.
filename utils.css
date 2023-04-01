@@ -1,0 +1,87 @@
+/* Flex classes */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Kavoon&family=Lobster&family=Roboto:wght@500&family=Varela+Round&display=swap");
+
+.flex {
+  display: flex;
+}
+.flex-end {
+  justify-content: end;
+}
+.flex-col {
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+.space-around {
+  justify-content: space-around;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.m-16 {
+  margin: 8px;
+}
+.mx-16 {
+  margin: 0 8px;
+}
+.mb-20 {
+  margin-bottom: 10px;
+}
+.h-20 {
+  height: 70px;
+}
+mt-0 {
+  margin-top: 0;
+}
+
+/* Hover classes */
+.hover-cursor-pointer:hover {
+  cursor: pointer;
+}
+.hover-underline:hover{
+  text-decoration:underline;
+}
+.hover-bg-grey:hover {
+  background-color: rgb(34, 34, 34);
+}
+.hover-bg-grey2:hover {
+  background-color: rgb(70, 69, 69);
+}
+
+/* Text color */
+.text-white-1 {
+  color: rgba(255, 255, 255, 60);
+}
+.text-grey-1 {
+  color: rgb(151, 149, 149);
+}
+.text-blue-1 {
+  color: rgb(87, 153, 239);
+}
+
+.text-green-1 {
+  color: #67ad4b;
+}
+.text-yellow-1 {
+  color: #e6b91e;
+}
+
+/* Icons classes */
+/* Margin */
+.m-10 {
+  margin: 5px;
+}
+.my-10{
+  margin: 0 5px;
+}
+.varela-round {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+
+}
