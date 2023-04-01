@@ -219,7 +219,7 @@ function displayMovieDetails(details) {
          </div>
          <div class="divider"></div>
          <div class="box-office-box hover-cursor-pointer hover-bg-grey">
-           <img class="imdb-pro-2 " src="/imdb-pro-logo.jpg" alt="imdb-pro" />
+           <img class="imdb-pro-2 " src="imdb-pro-logo.jpg" alt="imdb-pro" />
            <span class="hover-underline">See production, box office & company info logo</span>
          </div>
        </div>
