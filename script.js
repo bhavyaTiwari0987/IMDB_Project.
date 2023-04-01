@@ -47,7 +47,7 @@ function fetchMovie(searchedMovie) {
   };
   xhrRequest.open(
     "get",
-    `http://www.omdbapi.com/?s=${searchedMovie}&apikey=94bacef1`,
+    `https://www.omdbapi.com/?s=${searchedMovie}&apikey=94bacef1`,
     true
   );
   xhrRequest.send();
@@ -94,7 +94,7 @@ function loadMovieDetails(element) {
   console.log("in load movie details");
   // console.log(element);
   // console.log(element.getAttribute('id'));
-  fetch(`http://www.omdbapi.com/?i=${element.getAttribute('id')}&apikey=94bacef1`)
+  fetch(`https://www.omdbapi.com/?i=${element.getAttribute('id')}&apikey=94bacef1`)
     .then((response) => response.json())
     .then((data) => displayMovieDetails(data))
     .catch((err) => console.log("Error"));
