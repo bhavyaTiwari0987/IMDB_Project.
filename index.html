@@ -1,0 +1,138 @@
+<html>
+
+<head>
+  <title>
+    IMDb: Ratings, Reviews, and Where to Watch the Best Movies &amp; TV Shows
+  </title>
+  <link rel="stylesheet" href="input.css" />
+  <link rel="stylesheet" href="utils.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/74ad6da199.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header Starts -->
+  <header class="main-header">
+    <!-- nav-bar -->
+    <nav class="flex space-around align-center ">
+      <!-- logo -->
+      <img onclick="goToHomePage()" class="imdb-logo hover-cursor-pointer" src="imdb-logo.jpg"
+        alt="imdb-logo" />
+      <!-- menu -->
+      <div class="hover-cursor-pointer hover-bg-grey menu">
+        <i class="fa-solid fa-bars"></i>
+        <span>Menu</span>
+      </div>
+      <!-- search bar -->
+      <div class="flex">
+        <!-- all -->
+        <div class="flex all justify-center align-center
+            hover-cursor-pointer">
+          <span>All</span>
+          <i class="fa-solid fa-caret-down drop-down-logo-black "></i>
+        </div>
+        <!-- search -->
+        <div class="flex">
+          <input id="search" type="text" placeholder="Search IMDb" />
+          <!-- start list -->
+          <div id="search-list" class="search-list">
+
+            <!-- search-list-item -->
+            <!-- <div id="search-list-item" class=" search-list-item hide-search-list">
+
+              <div class="search-item-thumbnail">
+                <img src="assets/images/pp.jpg" alt="poster">
+              </div>
+              <div class="search-item-info">
+                <span>Paris Proposal</span>
+                <span>Alexa
+                  PenaVaga, Nicholas Bishop</span>
+              </div>
+            </div> -->
+
+          </div>
+          <!-- end list -->
+        </div>
+
+        <button type="submit" class="mybtn-1 search-button" onclick=findMovies()>
+          <span class="flex justify-center align-center
+              hover-cursor-pointer">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+        </button>
+
+      </div>
+
+
+      <!-- logo -->
+      <img class="imdb-pro hover-cursor-pointer hover-bg-grey" src="imdb-pro-logo.jpg" alt="imdb-pro" />
+      <!-- barrier -->
+      <i class="fa-solid fa-pipe vertical-line"></i>
+      <!--Button for going to the My Favourite Moives List -->
+      <div id="goToMyfavouriteMoviesPage" style="color: red;" class="flex space-around goToFavMoviePage hover-cursor-pointer
+          hover-bg-grey">
+        <i class="fa-solid fa-heart"></i>
+        <div class="flex">
+          <span>My Favourite Movies</span>
+
+        </div>
+      </div>
+      <!-- profile -->
+      <div class="flex space-around justify-center align-center
+          hover-cursor-pointer hover-bg-grey nav-profile">
+        <span class="profile-icon flex justify-center align-center"><i class="fa-solid fa-user"></i></span>
+        <span class="m-16">Bhavya</span>
+        <i class="fa-solid fa-caret-down drop-down-logo mb-20 "></i>
+      </div>
+      <!-- language -->
+      <div class="hover-cursor-pointer hover-bg-grey nav-lang">
+        <span>EN</span>
+        <i class="fa-solid fa-caret-down drop-down-logo"></i>
+      </div>
+    </nav>
+  </header>
+  <!-- Header Ends -->
+
+  <!-- Home Page Starts -->
+  <div id="home-data">
+    <p id="home-data-child">You will get your Search Result here!!</p>
+  </div>
+  <!-- Home Page Ends -->
+
+  <!-- Movie Cards Starts-->
+  <div class="movie-card-main-container">
+    <!-- movie name card starts -->
+    <div id="movie-card-container">
+      <!-- <div class="card">
+    <img class="card-image" src="../main project/assets/Images/pp.jpg" alt="Image not found">
+    <div class="card-rating flex">
+      <span class="text-yellow-1"><i class="fa-solid fa-star"></i></span>
+      <span style="color:rgb(174, 171, 171)">7.1</span>
+    </div>
+    <div class="card-title-box">
+      A Paris Proposal
+    </div>
+    <button>Show Movie Details</button>
+    <button>
+      <span>Add to favourites</span>
+    </button>
+  </div> -->
+
+    </div>
+    <!-- movie name cards ends -->
+  </div>
+  <!-- Movie Cards Ends -->
+
+  <!-- Movie Details Section Starts -->
+  <section id="movie-container">
+    <!-- <section class="movie-c-sm">
+    </section> -->
+  </section>
+  <!-- Movie Details Section Ends -->
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
